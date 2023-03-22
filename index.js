@@ -35,7 +35,10 @@ const auto = () => {
     let opt3 = document.getElementById('opt3')
     let opt4 = document.getElementById('opt4')
 
-    let radio = document.getElementById('radio')
+    let radio1 = document.getElementById('radio1')
+    let radio2 = document.getElementById('radio2')
+    let radio3 = document.getElementById('radio3')
+    let radio4 = document.getElementById('radio4')
     opt1.innerText = data[index].opt1
     opt2.innerText = data[index].opt2
     opt3.innerText = data[index].opt3
@@ -46,5 +49,5 @@ auto()
 
 
 const next = () => {
-    ;
+ console.log(radio1.checked,radio2.checked,radio3.checked,radio4.checked);
 }
