@@ -30,5 +30,21 @@ let index = 0;
 const auto = () => {
     let question = document.getElementById('question')
     question.innerText = data[index].q
+    let opt1 = document.getElementById('opt1')
+    let opt2 = document.getElementById('opt2')
+    let opt3 = document.getElementById('opt3')
+    let opt4 = document.getElementById('opt4')
+
+    let radio = document.getElementById('radio')
+    opt1.innerText = data[index].opt1
+    opt2.innerText = data[index].opt2
+    opt3.innerText = data[index].opt3
+    opt4.innerText = data[index].opt4
+
 }
 auto()
+
+
+const next = () => {
+    ;
+}
