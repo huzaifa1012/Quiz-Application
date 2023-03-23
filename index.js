@@ -33,6 +33,8 @@ const total = options.length
 let right = 0
 let wrong = 0
 
+
+
 const auto = () => {
     question.innerText = data[index].q
     options[0].nextElementSibling.innerText = data[index].opt1
@@ -40,6 +42,7 @@ const auto = () => {
     options[2].nextElementSibling.innerText = data[index].opt3
     options[3].nextElementSibling.innerText = data[index].opt4
 }
+
 
 const submitQuiz = () => {
     let answers = next()
@@ -53,19 +56,7 @@ const submitQuiz = () => {
     }
     index++
     auto()
-
 }
-
-
-// const next = () => {
-//     let selectedOption;
-//     options.forEach((input) => {
-//       if (input.checked) {
-//         selectedOption = input.value;
-//       }
-//     });
-//     return selectedOption || 'No answer selected';
-//   }
 
 
 const next = () => {
@@ -79,10 +70,6 @@ const next = () => {
         })
     return selectedOption
 }
-
-
-
-
 
 
 auto()
