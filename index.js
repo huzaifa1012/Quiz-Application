@@ -30,24 +30,17 @@ let index = 0;
 const auto = () => {
     let question = document.getElementById('question')
     question.innerText = data[index].q
-    let opt1 = document.getElementById('opt1')
-    let opt2 = document.getElementById('opt2')
-    let opt3 = document.getElementById('opt3')
-    let opt4 = document.getElementById('opt4')
+    let options = document.querySelectorAll('.options')
 
-    let radio1 = document.getElementById('radio1')
-    let radio2 = document.getElementById('radio2')
-    let radio3 = document.getElementById('radio3')
-    let radio4 = document.getElementById('radio4')
-    opt1.innerText = data[index].opt1
-    opt2.innerText = data[index].opt2
-    opt3.innerText = data[index].opt3
-    opt4.innerText = data[index].opt4
+    options[0].nextElementSibling.innerText = data[index].opt1
+    options[1].nextElementSibling.innerText = data[index].opt2
+    options[2].nextElementSibling.innerText = data[index].opt3
+    options[3].nextElementSibling.innerText = data[index].opt4
 
 }
 auto()
 
 
 const next = () => {
- console.log(radio1.checked,radio2.checked,radio3.checked,radio4.checked);
+    console.log(radio1.checked, radio2.checked, radio3.checked, radio4.checked);
 }
